@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Colegio San Rafael I.E.D.</title>
+    <link rel="stylesheet" href="chatbot.css">
+    <style>
+        /* Estilos adicionales para el acordeón */
+        .faq-content {
+            display: none;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-history" id="chat-history">
+            <!-- Aquí se mostrarán los mensajes -->
+        </div>
+        <div class="faq-options" id="faq-options">
+            <p>Opciones:</p>
+            <details>
+                <summary>¿Cuál es tu nombre?</summary>
+                <div class="faq-content">Mi nombre es Chatbot del Colegio San Rafael I.E.D.</div>
+            </details>
+            <details>
+                <summary>¿Qué haces?</summary>
+                <div class="faq-content">Estoy aquí para ayudarte con cualquier pregunta que tengas sobre el Colegio San Rafael I.E.D.</div>
+            </details>
+            <details>
+                <summary>¿Cómo estás?</summary>
+                <div class="faq-content">Estoy funcionando perfectamente, gracias por preguntar.</div>
+            </details>                        
+            <details>
+                <summary>¿Cuándo son las vacaciones?</summary>
+                <div class="faq-content">Las vacaciones son en Diciembre y Junio, según el calendario escolar.</div>
+            </details>
+            <details>
+                <summary>¿Dónde puedo encontrar los materiales de estudio?</summary>
+                <div class="faq-content">Puedes encontrar los materiales de estudio en la plataforma virtual del colegio.</div>
+            </details>
+            <details>
+                <summary>Gracias</summary>
+                <div class="faq-content">¡Gracias a ti! Con gusto. Para mantenerse informado y obtener más detalles, te invito a visitar nuestra página web oficial del Colegio San Rafael.</div>
+            </details>            
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
